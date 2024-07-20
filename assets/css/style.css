@@ -1,0 +1,595 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* reset css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {}
+
+/* COMMOM */
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col{
+    padding-left: 8px;
+    padding-right: 8px;
+    float:left;
+}
+
+
+.col-full{
+    width: 100%;
+}
+
+.col-half{
+    width: calc(100% / 2);
+}
+
+.col-third{
+    width: calc(100% / 3);
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.mt-32{
+    margin-top: 32px !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background: #000;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.pull-right{
+    float: right;
+}
+
+
+
+
+
+/* MAIN */
+
+.main {
+}
+
+
+
+.header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header .nav{
+    display: inline-block;
+}
+
+.nav, .subnav{
+    list-style-type:none;
+}
+
+.header .nav > li{
+    display: inline-block;
+}
+
+.header .nav li{
+    position: relative;
+}
+
+.header .nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+.header .nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+
+.header .nav li:hover .subnav{
+    display: block;
+}
+
+.header .nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3) ;
+}
+
+.header .nav .subnav li{
+    color: #000;
+}
+
+.nav .subnav li a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+.subnav li:hover a{
+    background-color: #ccc;
+}
+
+.mobile-menu-btn,
+.search-btn{
+    float: right;
+    padding: 0 24px;
+}
+
+.mobile-menu-btn .menu-icon,
+.search-btn .search-icon{
+    color: #fff;
+    line-height: 46px;
+    font-size: 20px;
+}
+
+.search-btn:hover{
+    background-color: red;
+    cursor:pointer;
+}
+
+.mobile-menu-btn:hover{
+    background-color: #ccc;
+    
+}
+
+.mobile-menu-btn:hover .menu-icon{
+    color: #000 ;
+}
+
+/* end header */
+
+/* begin slider */
+
+.slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background-color: red;
+    background: url("../images/ny.jpg") top center /cover no-repeat;
+    z-index:0;
+}
+
+.slider .text-content{
+    position: absolute;
+    bottom:48px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    /* left: 0;
+    right: 0; */
+    text-shadow: 0 0 10px #000;
+
+}
+
+.slider .text-content h3{
+    font-size: 24px;
+    padding: 16px 32px;
+    font-weight:500;
+}
+
+.slider .text-content p{
+    font-size: 15px;
+}
+
+
+
+.content {
+
+}
+
+.content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 64px 16px 112px 16px;
+}
+
+
+.content .section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing:4px;
+}
+
+.content .section-slogan{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: .6;
+}
+
+.content .content-section .about-text{
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 1.4;
+}
+
+.content .member-list{
+    padding-top: 32px;
+    text-align: center;
+}
+
+.member-list p{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.content .member-img{
+    width: 154px;
+    /* margin-bottom: 16px; */
+    border-radius: 4px;
+}
+
+/* tour section */
+.tour-section {
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+}
+
+.tickets-list li{
+    color: #757575;
+    padding: 8px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out{
+    margin-left: 16px;
+    background-color: #f44336;
+    padding: 0 8px;
+    color: #fff;
+}
+
+.tickets-list .quantity{
+    width: 24px;
+    height: 24px;
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+.places-list{
+    padding: 16px 0;
+}
+
+
+.places-list img{
+    width: 100%;
+    display: block;
+}
+
+.places-list img:hover{
+    opacity: 0.6;
+}
+
+.places-list .place-body{
+    background-color: #fff;
+    padding:16px;
+    font-size: 15px;
+}
+
+.place-body .place-heading{
+    font-weight: 600;
+}
+
+.place-body .place-time{
+    margin-top: 15px;
+    opacity: .6;
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+
+
+/* CONTACTS FORM */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info p{
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-form .form-submit-btn{
+    float: right;
+}
+
+
+.map-section img{
+    width: 100%;
+}
+
+.footer{
+    padding: 64px 15px;
+    text-align: center;
+}
+
+.footer .social{
+    font-size: 24px;
+    
+}
+
+.social a{
+    text-decoration: none;
+    color: #000;
+    opacity: .7;
+}
+
+
+.social a:hover{
+    opacity: .4;
+}
+
+.footer .copyright{
+    color: #000;
+    margin: 15px 0;
+    opacity: .7;
+}
+
+.copyright a{
+    color: #000 ;
+}
+
+
+.copyright a:hover{
+    opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.4);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-open{
+    display: flex;
+}
+
+.modal .modal-container{
+    background-color: #fff;
+    width: 900px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalShow ease .5s;
+}
+
+.modal .modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    background-color: #009688;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.modal .modal-close:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.modal .modal-header{
+    padding: 42px 16px;
+    background-color: #009688;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+}
+.modal .modal-body{
+    font-size: 15px;
+    padding: .15px 16px;
+    color: #000;
+}
+
+.modal .modal-lable,
+.modal .modal-input{
+    display: block;
+    width: 100%;
+    
+    font-size: 15px;
+}
+
+.modal .modal-lable{
+    padding: 15px 0;
+}
+.modal .modal-input{
+    padding: 8px;
+    border: 1px solid #ccc;
+
+}
+.modal .buy-tickets{
+    width: 100%;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.modal .modal-footer-close:hover,
+.modal .buy-tickets:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.modal .modal-footer{
+    padding: 16px;
+    font-size: 15px;
+}
+.modal .modal-footer-close{
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    border: navajowhite;
+    font-weight: 600;
+}
+.modal .modal-help{
+    float: right;
+}
+
+.modal .modal-help a{
+    float: right;
+    color: #2196F3 !important;
+    margin-left: 2px;
+}
+
+@keyframes modalShow{
+    from{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  RESPONSIVE */
+
+@media(min-width: 1024px){
+
+}
+
+@media(min-width: 740px) and (max-width: 1023px){
+    
+}
+
+@media(max-width: 740px){
+
+}
